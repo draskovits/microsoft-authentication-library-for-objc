@@ -1145,6 +1145,7 @@
 		23F32F051FF4787600B2905E /* MSIDTestURLResponse+MSAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSIDTestURLResponse+MSAL.h"; sourceTree = "<group>"; };
 		23F32F061FF4787600B2905E /* MSIDTestURLResponse+MSAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MSIDTestURLResponse+MSAL.m"; sourceTree = "<group>"; };
 		23FB5C1C22542B99002BF1EB /* MSALJsonDeserializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSALJsonDeserializable.h; sourceTree = "<group>"; };
+		3BB3CCF32518D21700E0EC32 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		583BFD1524DDF9B10035B901 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		58B81F6524AC59A000E8799E /* MSALTestCacheTokenResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSALTestCacheTokenResponse.h; sourceTree = "<group>"; };
 		58B81F6E24AC59C600E8799E /* MSALTestCacheTokenResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSALTestCacheTokenResponse.m; sourceTree = "<group>"; };
@@ -2408,6 +2409,7 @@
 		D6DFF3991E2579360012891A = {
 			isa = PBXGroup;
 			children = (
+				3BB3CCF32518D21700E0EC32 /* Package.swift */,
 				231CE9E01FECBD4600E95D3E /* unit-test-host.entitlements */,
 				D6A206191FC50A4D00755A51 /* IdentityCore.xcodeproj */,
 				D65A6F671E3FF3D900C69FBA /* src */,
@@ -4806,11 +4808,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D65A6FF01E4026B900C69FBA /* msal__debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -4818,7 +4822,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D65A6FF11E4026C000C69FBA /* msal__release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
