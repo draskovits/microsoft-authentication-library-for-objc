@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "MSAL",
+            platforms: [
+            .iOS(.v11)
+        ],
     products: [
         .library(
             name: "microsoft-authentication-library-for-objc",
