@@ -14,7 +14,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MSAL",
-            url: "https://github.com/Rushifaaa/microsoft-authentication-library-for-objc/releases/download/1.1.9-alpha/MSAL.xcframework.zip",
-            checksum: "184dceb851bbdff3cd1443f3e36e23a1c8d274b2e8fb2a9ef952c6f96f747216")
+            url: "https://github.com/draskovits/microsoft-authentication-library-for-objc/releases/download/1.1.9-spm/MSAL.xcframework.zip",
+            checksum: "10d64df56adb677cc075dc06a3e71fa3dfada2adc13bdec4cdb0abca3eff27ce")
     ]
 )
